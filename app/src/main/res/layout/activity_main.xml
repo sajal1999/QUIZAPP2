@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="#64DD17">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/android_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="sans-serif"
+                android:text="QUIZ."
+                android:textColor="#FFFFFF"
+                android:textSize="80sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Your Quiz Stars Now !!!"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/question1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="What wonder was discovered by a Swiss Explorer in 1812 ?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/question1_text_view_radio">
+            <RadioButton
+            android:id="@+id/question1_choice1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked"
+            android:text="Hanging Garden of Babylon"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/question1_choice2_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="radioBoxClicked"
+                android:text="Petra"
+                android:textColor="#76FF03"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/question1_choice3_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="radioBoxClicked"
+                android:text="The Colossus of Rhodes"
+                android:textColor="#76FF03"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/question1_choice4_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="radioBoxClicked"
+                android:text="Machu Pichu"
+                android:textColor="#76FF03"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Which of them are the new wonders of the world ?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/question2_choice1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="checkBoxClicked"
+            android:text="Acropolis of Athens"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:id="@+id/question2_choice2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="checkBoxClicked"
+            android:text="Taj Mahal"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:id="@+id/question2_choice3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="checkBoxClicked"
+            android:text="Great Wall of China"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:id="@+id/question2_choice4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="checkBoxClicked"
+            android:text="Alhambra"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="What was the statue of Zeus at Olympia made out of ?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/question3_choice1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked1"
+            android:text="Wood"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question3_choice2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked1"
+            android:text="Steel"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question3_choice3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked1"
+            android:text="Gold"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question3_choice4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked1"
+            android:text="Plastic"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="The Taj Mahal was built by a Mughal Emperor to honor his late ?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/question4_choice1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked2"
+            android:text="Son"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question4_choice2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked2"
+            android:text="Father"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question4_choice3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked2"
+            android:text="Wife"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question4_choice4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked2"
+            android:text="Daughter"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="What is the oldest structure on the ancient list of the seven wonders ?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/question5_choice1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked3"
+            android:text="The Great Pyramids of Giza"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question5_choice2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked3"
+            android:text="Lighthouse of Alexandria"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question5_choice3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked3"
+            android:text="Great Wall of China"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question5_choice4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked3"
+            android:text="Statue of Zeus at Olympia"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="The Masoleum of Halicarnassus was built as a ?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/question6_choice1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked4"
+            android:text="Tomb"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question6_choice2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked4"
+            android:text="Light house"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question6_choice3_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked4"
+            android:text="Port"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/question6_choice4_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="radioBoxClicked4"
+            android:text="House"
+            android:textColor="#76FF03"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did Mayans build the Chichen Itza ?"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="#76FF03"
+            android:onClick="radioBoxClicked6"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/question7_choice1_text_view"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="#76FF03"
+            android:onClick="radioBoxClicked6"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/question7_choice2_text_view"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/question8_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The best wonder is ?"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/question8_answer_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="50dp"
+            android:onClick="submitAnswers"
+            android:text="Submit Answers"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="157dp"
+            android:layout_marginTop="20dp"
+            android:onClick="reset"
+            android:text="RESET"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="45dp"
+            android:layout_marginTop="20dp"
+            android:background="#64DD17">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
